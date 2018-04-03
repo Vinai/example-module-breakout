@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+#breakout-wrapper {
+    height: 600px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.breakout {
+    position: relative;
+}
+
+.breakout div {
+    position: absolute;
+}
+
+.score-board {
+    padding-top: .4em;
+    padding-left: .5em;
+}
+
+.score-board h1 {
+    margin-bottom: 0.2em;
+}

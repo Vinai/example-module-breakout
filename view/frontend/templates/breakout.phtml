@@ -1,0 +1,43 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "breakout": {
+                        "component": "VinaiKopp_Breakout/js/game",
+                        "children": {
+                            "score-board": {
+                                "component": "VinaiKopp_Breakout/js/game/score-board"
+                            },
+                            "frame": {
+                                "component": "VinaiKopp_Breakout/js/game/frame",
+                                "children": {
+                                    "wall": {
+                                        "component": "VinaiKopp_Breakout/js/game/wall"
+                                    },
+                                    "ball": {
+                                        "component": "VinaiKopp_Breakout/js/game/ball"
+                                    },
+                                    "paddle": {
+                                        "component": "VinaiKopp_Breakout/js/game/paddle"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<div id="breakout-wrapper" data-bind="scope: 'breakout'">
+    <div data-bind="click: running ? stop : start">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+</div>

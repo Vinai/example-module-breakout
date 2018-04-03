@@ -1,0 +1,19 @@
+{
+  "name": "vinaikopp/module-breakout",
+  "description": "n.a.",
+  "require": {
+    "php": "^7.0.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "BSD-3-Clause"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "VinaiKopp\\Breakout\\": ""
+    }
+  }
+}

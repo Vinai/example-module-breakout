@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Breakout</title>
+        <css src="VinaiKopp_Breakout/css/breakout.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="breakout" template="VinaiKopp_Breakout::breakout.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
